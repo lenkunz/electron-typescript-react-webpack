@@ -10,8 +10,6 @@ if (Config.IsDevelopment) {
 
 let mainWindow: Electron.BrowserWindow;
 
-const auth = new Auth();
-
 async function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
