@@ -59,6 +59,9 @@ typings/
 # Awesome-typescript-loader cache
 .awcache
 
+# Hard-source-webpack-plugin cahce
+.hscache
+
 # Yarn Integrity file
 .yarn-integrity
 

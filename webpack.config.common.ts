@@ -27,7 +27,9 @@ const Config: Webpack.Configuration = {
         path: Path.resolve(__dirname, "./dist"),
     },
     plugins: [
-        new HardSourceWebpackPlugin(),
+        new HardSourceWebpackPlugin({
+            cacheDirectory: Path.resolve(__dirname, "./.hscache"),
+        }),
     ],
     resolve: {
         extensions: [".js", ".ts", ".tsx", ".jsx", ".json"],
