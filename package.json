@@ -12,7 +12,7 @@
     "dev:start:renderer": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack.config.renderer.dev.ts",
     "dev:start:main": "cross-var wait-on $npm_package_main && cross-env NODE_ENV=development electron . --inspect=9229 --remote-debugging-port=9223",
     "dev:start:hmr": "run-p dev:build:main dev:start:renderer",
-    "dev": "cross-env HMR=1 npm-run-all dev:start:hmr"
+    "dev": "cross-env HMR=1 run-s dev:clean dev:start:hmr"
   },
   "keywords": [
     "typescript",
