@@ -5,4 +5,3 @@ import ReactDom from "react-dom";
 import { App } from "./Component/App.dev";
 
 ReactDom.render(<App />, document.getElementById("root"));
-
