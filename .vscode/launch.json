@@ -33,7 +33,6 @@
             "sourceMapPathOverrides": {
                 "webpack:///./*":   "${webRoot}/*",
             },
-            "trace": true,
         }
     ],
 }
