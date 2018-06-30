@@ -8,7 +8,6 @@
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "removeComments": true,
-        //"strict": true,
         "sourceMap": true,
         "skipLibCheck": true,
         "allowJs": true,

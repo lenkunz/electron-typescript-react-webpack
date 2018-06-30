@@ -1,12 +1,6 @@
 import { app, BrowserWindow, ipcMain } from "electron";
 import * as Path from "path";
 
-import { Auth } from "./Auth";
-
-import { ILoginInfoResponse } from "./IpcData";
-import { IpcLoginReceiver, IpcLoginSender } from "./IpcFunction/IpcFunction";
-import LoginProcess from "./Process/LoginProcess";
-
 import Config from "./Config";
 
 if (Config.IsDevelopment) {
@@ -49,9 +43,6 @@ async function createWindow() {
     // when you should delete the corresponding element.
     mainWindow = null;
   });
-
-  const loginProcess = new LoginProcess(auth, new IpcLoginSender(mainWindow));
-  loginProcess.Login();
 }
 
 // This method will be called when Electron has finished

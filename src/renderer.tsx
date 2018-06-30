@@ -1,3 +1,7 @@
+// tslint:disable-next-line:no-debugger
 import React from "react";
+import ReactDom from "react-dom";
 
-export const App = () => <div>Node version: {process.versions.node}</div>;
+import { App } from "./Component/App";
+
+ReactDom.render(<App />, document.getElementById("root"));
